@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeLux Hotel</title>
+    <link rel="shortcut icon" href="" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#header" class="logo">
+                    <img src="./images/logo.png" alt="logo" class="logo__img">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="list__item">
+                            <a href="#gallery" class="item__link">Галерея</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#homes" class="item__link">Наші дома</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#entertainment" class="item__link">Додаткові розваги</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#contacts" class="item__link">Бронювання</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#comments" class="item__link">Відгуки</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#location" class="item__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <a href="tel:+38 099 265 14 87" class="phone">
+                        <p>+38 099 265 14 87</p>
+                        <p>Зворотній дзвінок</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="promo" id="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <h1 class="promo__title">
+                        Відпочиньте на березі
+                        дивовижних Голубих озер 
+                    </h1>
+                    <h2 class="promo__subtitle">Аренда дому зі знижкою 10% при бронюванні онлайн</h2>
+                    <a href="javascript:void(0);" class="promo__reservation-link some-link">
+                        Забронювати
+                    </a>
+                    <ul class="promo__list">
+                        <li class="list__item">
+                            <span href="#" class="discript__num">1</span>
+                            <span class="discript__text">Власна територія</span>    
+                        </li>
+                        <li class="list__item">
+                            <span href="#" class="discript__num">2</span>
+                            <span class="discript__text">Окремий та облаштований пляэ</span> 
+                        </li>
+                        <li class="list__item">
+                            <span href="#" class="discript__num">3</span> 
+                            <span class="discript__text">Для кожного дому
+                                своя зона барбекю</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="gallery__inner">
+                    <h2 class="gallery__title title">
+                        Наші дома розташовані <br> 
+                        між затишним лісом та захоплюючим озером
+                    </h2>
+                    <h3 class="gallery__subtitle subtitle">
+                        Подивіться на фото нашого гостьового дому
+                    </h3>
+                    <div class="main-gallery">
+                        
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 3.png">
+                            <img alt="Title 1" src="./images/gallery/Rectangle 3.png"/>
+                        </a>
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 6.png">
+                            <img alt="Title 2" src="./images/gallery/Rectangle 6.png"/>
+                        </a>
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 5.png">
+                            <img alt="Title 1" src="./images/gallery/Rectangle 5.png"/>
+                        </a>
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 4.png">
+                            <img alt="Title 2" src="./images/gallery/Rectangle 4.png"/>
+                        </a>
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 7.png">
+                            <img alt="Title 1" src="./images/gallery/Rectangle 7.png"/>
+                        </a>
+                        <a class="gallery__item gallery__link-img" target="_blank" href="./images/gallery/Rectangle 8.png">
+                            <img alt="Title 2" src="./images/gallery/Rectangle 8.png"/>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="gallery-link some-link">
+                        Показати ще
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="homes" id="homes">
+            <div class="container">
+                <div class="homes__inner">
+                    <h2 class="homes__title title">
+                        Доми на будь-який вибір
+                    </h2>
+                    <h3 class="homes__subtitle subtitle">
+                        Обирайте варінат для великої компанії або сімейного відпочинку
+                    </h3>
+                    <div class="swiper homes-swiper">
+                        <ul class="swiper-wrapper homes-list">
+                            <li class="swiper-slide homes-item">
+                                <img src="./images/homes/Rectangle 11.jpg" class="homes-item__img">
+                                <h4 class="homes-item__title">Котедж №1</h4>
+                                <p class="homes-item__price">1-4 людини, від 1500₴ за добу</p>
+                                <a href="#contacts" class="homes-item__link some-link">Забронювати</a>
+                            </li>
+                            <li class="swiper-slide homes-item">
+                                <img src="./images/homes/Rectangle 10.jpg" alt="" class="homes-item__img">
+                                <h4 class="homes-item__title">Котедж №2</h4>
+                                <p class="homes-item__price">1-4 людини, від 2000₴ за добу</p>
+                                <a href="#contacts" class="homes-item__link some-link">Забронювати</a>
+                            </li>
+                            <li class="swiper-slide homes-item">
+                                <img src="./images/homes/Rectangle 9.jpg" alt="" class="homes-item__img">
+                                <h4 class="homes-item__title">Дім із лазнею</h4>
+                                <p class="homes-item__price">до 10 людей, від 3500₴ за добу</p>
+                                <a href="#contacts" class="homes-item__link some-link">Забронювати</a>
+                            </li>
+                            <li class="swiper-slide homes-item">
+                                <img src="./images/homes/Rectangle 12.jpg" alt="" class="homes-item__img">
+                                <h4 class="homes-item__title">Дім з басейном</h4>
+                                <p class="homes-item__price">до 15 людей, від 3000₴ за добу</p>
+                                <a href="#contacts" class="homes-item__link some-link">Забронювати</a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="entertainment" id="entertainment">
+            <div class="container">
+                <div class="entertainment__inner">
+                    <h2 class="entertainment__title title">
+                        Додаткові розваги
+                    </h2>
+                    <h3 class="entertainment__subtitle subtitle">
+                        Бронювання розваг відбувається безпосередньо у гостьовому домі
+                    </h3>
+                    <ul class="entertainment-list">
+                        <li class="entertainment-item">
+                            <img src="./images/entertainment/Rectangle 21.jpg" class="entertainment-item__img">
+                            <div class="information-wrapper">
+                                <h4 class="entertainment-item__title title">Поїздка на квадроциклах</h4>
+                                <h5 class="entertainment-item__subtitle subtitle">Тривалість: 1 година</h5>
+                                <p class="entertainment-item__price subtitle">Ціна: 500₴ </p>
+                                <p class="entertainment-item__discript">
+                                    Одна з найпопулярніших додаткових
+                                    розвага. Пориньте у світ швидкості 
+                                    разом з нашими квадроциклами.
+                                    Маршрут поїздки пролягає через
+                                    усім відомий каштановий ліс.
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="entertainment-item">
+                            <img src="./images/entertainment/Rectangle 22.jpg" class="entertainment-item__img">
+                            <div class="information-wrapper">
+                                <h4 class="entertainment-item__title title">Рибалка в окремо 
+                                    облаштованій зоні</h4>
+                                <h5 class="entertainment-item__subtitle subtitle">Тривалість: цілий день</h5>
+                                <p class="entertainment-item__price subtitle">Ціна: 3000₴</p>
+                                <p class="entertainment-item__discript">
+                                    Хочете провести день у тиші і наодинці
+                                    з собою? Рибалка - чудовий варіант! Ви
+                                    можете взяти свої прилади або ми надамо Вам можливість арендувати прилади у нас.
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="entertainment-item">
+                            <img src="./images/entertainment/Rectangle 23.jpg" class="entertainment-item__img">
+                            <div class="information-wrapper">
+                                <h4 class="entertainment-item__title title">Дайвінг</h4>
+                                <h5 class="entertainment-item__subtitle subtitle">Тривалість: 1 година</h5>
+                                <p class="entertainment-item__price subtitle">Ціна: 1000₴ </p>
+                                <p class="entertainment-item__discript">
+                                    Дайвінг - це дуже крута можливість
+                                    познайомитись з підводним світом.
+                                    Наш інструктор зробить Ваше занурення
+                                    максимально комфортним і вражаючим.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="entertainment-item">
+                            <img src="./images/entertainment/Rectangle 24.jpg" class="entertainment-item__img">
+                            <div class="information-wrapper">
+                                <h4 class="entertainment-item__title title">Піша прогулянка</h4>
+                                <h5 class="entertainment-item__subtitle subtitle">Тривалість: 2 години</h5>
+                                <p class="entertainment-item__price subtitle">Ціна: 300₴ </p>
+                                <p class="entertainment-item__discript">
+                                    Якщо Ви фанат активного відпочинку,
+                                    то піша прогулянка чудово доповнить
+                                    перебування в нашому гостьовому дому.
+                                    Пропонується прогулянка лісом, яка 
+                                    завершиться підйомом на невеличку
+                                    гору, з котрої Ви зможете насолодитись 
+                                    краєвидами Голубих озер.
+                                </p>
+                            </div>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <form class="form">
+                        <legend class="contacts__title title">Отримайте знижку 10% при бронюванні онлайн</legend>
+                        <select class="form__select" name="" id="">
+                            <option value="value0" selected disabled>Обeріть будинок</option>
+                            <option value="value1">Котедж №1</option>
+                            <option value="value2">Котедж №2</option>
+                            <option value="value3">Дім із лазнею </option>
+                            <option value="value4">Дім з басейном </option>
+                        </select>
+                        <input class="form__name" type="text" name="" id="" placeholder="Ваше ім`я" required>
+                        <input class="form__tel" type="tel" name="" id="" placeholder="Номер телефону" required pattern="[0-9]{10,12}">
+                        <input class="form__btn some-link" type="submit" value="Забронювати">
+                        <div class="some-wrapper">
+                            <input class="form__check" type="checkbox" name="sdsd" id="formcheckbox" required checked>
+                            <label for="formcheckbox">Даю згоду на обробку моїх персональних даних</label>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="comments" id="comments">
+            <div class="container">
+                <div class="comments__inner">
+                    <h2 class="comments__title title">
+                        Відгуки
+                    </h2>
+                    <div class="swiper comments-swiper">
+                        <ul class="swiper-wrapper comments-list">
+                            <li class="swiper-slide comments-item">
+                                <img src="./images/comments/Rectangle 19.png" class="comments-item__img">
+                                <div class="information-wrapper">
+                                    <div class="user-info">
+                                        <img src="./images/comments/Ellipse 5.png" class="comments-item__userimg">
+                                        <div class="wrapper">
+                                            <h4 class="comments-item__username">Василь Васильченко</h4>
+                                            <h5 class="comments-item__home">Котедж №1</h5>
+                                        </div>
+                                    </div>
+                                    <p class="comments-item__mark">Я задоволений на 100%!</p>
+                                    <p class="comments-item__discript">
+                                        Відпочивали з друзями на травневих святах. DeLuxe Hotel залишив після себе найкрутіші враження. Окрема подяку господарю В’ячеславу!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide comments-item">
+                                <img src="./images/comments/Rectangle 20.png" class="comments-item__img">
+                                <div class="information-wrapper">
+                                    <div class="user-info">
+                                        <img src="./images/comments/Ellipse 4.png" class="comments-item__userimg">
+                                        <div class="wrapper">
+                                            <h4 class="comments-item__username">Антон Антонов</h4>
+                                            <h5 class="comments-item__home">Дім із лазнею</h5>
+                                        </div>
+                                    </div>
+                                    <p class="comments-item__mark">Просто супер!</p>
+                                    <p class="comments-item__discript">
+                                        Їздив на відпочинок разом з сім’єю та батьками. Дім дуже зручний, навіть при великій компанії, ніхто не заважав одне одному. За лазню - окремий респект!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="swiper-slide comments-item">
+                                <img src="./images/comments/Rectangle 20.png" class="comments-item__img">
+                                <div class="information-wrapper">
+                                    <div class="user-info">
+                                        <img src="./images/comments/Ellipse 4.png" class="comments-item__userimg">
+                                        <div class="wrapper">
+                                            <h4 class="comments-item__username">Антон Антонов</h4>
+                                            <h5 class="comments-item__home">Дім із лазнею</h5>
+                                        </div>
+                                    </div>
+                                    <p class="comments-item__mark">Просто супер!</p>
+                                    <p class="comments-item__discript">
+                                        Їздив на відпочинок разом з сім’єю та батьками. Дім дуже зручний, навіть при великій компанії, ніхто не заважав одне одному. За лазню - окремий респект!
+                                    </p>
+                                </div>
+                            </li> 
+                            <li class="swiper-slide comments-item">
+                                <img src="./images/comments/Rectangle 20.png" class="comments-item__img">
+                                <div class="information-wrapper">
+                                    <div class="user-info">
+                                        <img src="./images/comments/Ellipse 4.png" class="comments-item__userimg">
+                                        <div class="wrapper">
+                                            <h4 class="comments-item__username">Антон Антонов</h4>
+                                            <h5 class="comments-item__home">Дім із лазнею</h5>
+                                        </div>
+                                    </div>
+                                    <p class="comments-item__mark">Просто супер!</p>
+                                    <p class="comments-item__discript">
+                                        Їздив на відпочинок разом з сім’єю та батьками. Дім дуже зручний, навіть при великій компанії, ніхто не заважав одне одному. За лазню - окремий респект!
+                                    </p>
+                                </div>
+                            </li> 
+                            <li class="swiper-slide comments-item">
+                                <img src="./images/comments/Rectangle 20.png" class="comments-item__img">
+                                <div class="information-wrapper">
+                                    <div class="user-info">
+                                        <img src="./images/comments/Ellipse 4.png" class="comments-item__userimg">
+                                        <div class="wrapper">
+                                            <h4 class="comments-item__username">Антон Антонов</h4>
+                                            <h5 class="comments-item__home">Дім із лазнею</h5>
+                                        </div>
+                                    </div>
+                                    <p class="comments-item__mark">Просто супер!</p>
+                                    <p class="comments-item__discript">
+                                        Їздив на відпочинок разом з сім’єю та батьками. Дім дуже зручний, навіть при великій компанії, ніхто не заважав одне одному. За лазню - окремий респект!
+                                    </p>
+                                </div>
+                            </li>   
+                        </ul>
+                        <div class="swiper-nav">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="location" id="location">
+            <div class="container">
+                <div class="location__inner">
+                    <h2 class="location__title title">
+                        Ми на мапi
+                    </h2>
+                    <div id="map" style="height: 500px"></div>
+                    <div class="info-box animate__animated">
+                        <h4 class="info-box__title">Адреса</h4>
+                        <p class="info-box__text">
+                            смт. Щурово
+                            вул. Озерна 2
+                        </p>
+                        <h4 class="info-box__title">Контакти</h4>
+                        <p class="info-box__text">
+                            <a class="info-box__link" href="tel:+380992651487">+38 099 265 14 87</a>
+                            <a class="info-box__link" href="mailto:deluxe-house@gmail.com">deluxe-house@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo">
+                    <img src="./images/logo.png" alt="logo" class="logo__img">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="list__item">
+                            <a href="#gallery" class="item__link">Галерея</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#homes" class="item__link">Наші дома</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#entertainment" class="item__link">Додаткові розваги</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#contacts" class="item__link">Бронювання</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#comments" class="item__link">Відгуки</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#location" class="item__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="addres">
+                    Україна, Донецька область
+                    Лиманьский район, смт. Щурово
+                    вул. Озерна 2
+                </p>
+                <div class="callback">
+                    <a href="#contacts" class="footer__callback-link some-link">
+                        Забронювати
+                    </a>
+                    <a href="tel:+38 099 265 14 87" class="phone">
+                        +38 099 265 14 87    
+                    </a>
+                    <a href="mailto:deluxe-house@gmail.com" class="phone">
+                        deluxe-house@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     
+<script src="./js/main.js"></script>
+</html>
+<!-- AIzaSyD23MQwK7J9kgUgbbC7pYKdz_6h5A9lXAY -->
