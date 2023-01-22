@@ -13,7 +13,8 @@ li {
   padding-left: 0;
 }
 
-ul, input {
+ul,
+input {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,6 +80,7 @@ button {
   display: flex;
 }
 .menu__list .list__item {
+  display: block;
   padding: 1rem;
 }
 .menu__list .list__item > a {
@@ -90,6 +92,7 @@ button {
   width: 100%;
   height: 3px;
   bottom: 0;
+  left: 0;
   margin: -5px 0;
   background-color: white;
   visibility: hidden;
@@ -169,10 +172,6 @@ button {
   content: "☝";
   font-size: 4rem;
   margin: auto;
-}
-.scroll-top:hover {
-  cursor: pointer;
-  background-color: #333;
 }
 .scroll-top:hover {
   cursor: pointer;
@@ -289,6 +288,9 @@ button {
   align-items: center;
   margin: 0 0 3rem;
 }
+.main .gallery .main-gallery .gallery__item {
+  height: 100%;
+}
 .main .gallery .main-gallery .gallery__item:last-child {
   grid-column: 3/4;
   grid-row: 1/7;
@@ -315,6 +317,7 @@ button {
 }
 .main .gallery .main-gallery .gallery__link-img img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3rem;
@@ -335,19 +338,19 @@ button {
   padding: 7rem 0 0;
   font-family: "Comfortaa";
 }
-.main .homes .homes-item {
+.main .homes-item {
   padding: 1.5rem;
   margin: 0 0 3rem;
 }
-.main .homes .homes-item__img {
+.main .homes-item__img {
   max-width: 100%;
   margin: 0 0 1rem;
 }
-.main .homes .homes-item__title {
+.main .homes-item__title {
   font-size: 2.4rem;
   margin: 0 0 1rem;
 }
-.main .homes .homes-item__price {
+.main .homes-item__price {
   margin: 0 0 1.5rem;
 }
 .main .homes .swiper-pagination {
@@ -444,7 +447,8 @@ button {
 .main .contacts .form .contacts__title {
   font-family: "Comfortaa";
 }
-.main .contacts .form input, .main .contacts .form select {
+.main .contacts .form input,
+.main .contacts .form select {
   font-family: "Montserrat";
   line-height: 2rem;
   padding: 1rem 3rem;
@@ -469,7 +473,8 @@ button {
 .main .comments__title {
   margin: 0 auto 4.5rem;
 }
-.main .comments-list, .main .comments-item, .main .comments .user-info {
+.main .comments-list, .main .comments-item,
+.main .comments .user-info {
   display: flex;
 }
 .main .comments-list {
@@ -482,14 +487,17 @@ button {
 .main .comments-item__img {
   max-width: 50%;
 }
-.main .comments .user-info, .main .comments .comments-item__mark {
+.main .comments .user-info,
+.main .comments .comments-item__mark {
   margin: 0 0 0.5rem;
   line-height: 3.6rem;
 }
-.main .comments .wrapper, .main .comments .information-wrapper {
+.main .comments .wrapper,
+.main .comments .information-wrapper {
   margin: 0 0 0 2rem;
 }
-.main .comments .information-wrapper, .main .comments .comments__img {
+.main .comments .information-wrapper,
+.main .comments .comments__img {
   width: 50%;
 }
 .main .comments .comments-item__mark {
@@ -498,7 +506,8 @@ button {
 .main .comments .comments-item__discript {
   font-size: 1.4rem;
 }
-.main .comments .comments-item__userimg, .main .comments .comments__img {
+.main .comments .comments-item__userimg,
+.main .comments .comments__img {
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -507,7 +516,8 @@ button {
   flex-direction: row-reverse;
   justify-content: space-evenly;
 }
-.main .comments .swiper-button-next, .main .comments .swiper-button-prev {
+.main .comments .swiper-button-next,
+.main .comments .swiper-button-prev {
   width: auto;
   margin-top: 0;
   display: block;
@@ -523,7 +533,8 @@ button {
   padding: 7rem 0;
   font-family: "Comfortaa";
 }
-.main .location__inner, .main .location #map {
+.main .location__inner,
+.main .location #map {
   position: relative;
 }
 .main .location #map {
@@ -579,6 +590,8 @@ button {
 }
 .footer__callback-link {
   font-family: "Montserrat";
+  background-color: #1D1D1D;
+  color: #EBE679;
   font-weight: 500;
   font-size: 1.8rem;
   margin: 0 0 1rem;
@@ -608,6 +621,13 @@ button {
   html {
     font-size: 56%;
   }
+  .main .comments-item__img {
+    display: none;
+  }
+  .main .comments .information-wrapper,
+.main .comments .comments__img {
+    width: auto;
+  }
 }
 @media (max-width: 1050px) {
   .main .entertainment-list {
@@ -622,7 +642,12 @@ button {
   html {
     font-size: 60%;
   }
-  .main .gallery, .main .homes, .main .entertainment, .main .contacts, .main .comments, .main .location {
+  .main .gallery,
+.main .homes,
+.main .entertainment,
+.main .contacts,
+.main .comments,
+.main .location {
     padding: 3.5rem 0 0;
   }
   #hamburger {
@@ -662,9 +687,6 @@ button {
   }
   .main .promo__title {
     max-width: none;
-  }
-  .main .comments-item__img {
-    display: none;
   }
   .main .comments .information-wrapper {
     width: auto;
@@ -782,6 +804,14 @@ button {
   }
   .main .contacts .form {
     padding: 1.5rem;
+  }
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+  }
+  .scroll-top::after {
+    font-size: 3rem;
   }
 }
 @media (max-height: 499px) and (max-width: 899px), (max-width: 767px) {
