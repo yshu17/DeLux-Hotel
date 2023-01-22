@@ -804,6 +804,13 @@ button {
   .main .contacts .form {
     padding: 1.5rem;
   }
+  .main .contacts .form .some-wrapper {
+    margin: auto;
+    max-width: 60%;
+  }
+  #map {
+    height: 300px;
+  }
   .scroll-top {
     width: 50px;
     height: 50px;

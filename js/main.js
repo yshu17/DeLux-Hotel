@@ -164,3 +164,4 @@ $(window).on("load", function () {
   $("[href*='#']").mPageScroll2id();
 });
 
+var value1 = 1;
