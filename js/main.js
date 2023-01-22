@@ -1,12 +1,15 @@
 //Burger Menu
 let burgerBtn = document.getElementById("hamburger");
 let burgerMenu = document.getElementById("menu");
-
+let isBurgerClose = false;
 burgerBtn.addEventListener("click", (e) => {
 
   burgerBtn.classList.toggle('open');
   burgerMenu.classList.toggle("change-opacity");
-  disableScroll();
+
+  if (burgerBtn.classList.contains('open')) disableScroll();
+
+  else enableScroll();
 
   window.addEventListener('click', function (e) {
 
@@ -15,9 +18,11 @@ burgerBtn.addEventListener("click", (e) => {
       burgerBtn.classList.toggle('open');
       burgerMenu.classList.toggle('change-opacity');
       enableScroll();
+      isBurgerClose = true;
     }
 
   });
+
 });
 
 //Scroll-Disabler
