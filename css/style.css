@@ -682,7 +682,6 @@ button {
     display: inline-block;
   }
   .logo {
-    flex-grow: 1;
     text-align: start;
   }
   .main .promo__title {
